@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
+    "nanoid": "^5.0.7",
     "react": "^18.3.1",
+    "react-awesome-button": "^7.0.5",
+    "react-button": "^1.2.1",
+    "react-country-flag": "^3.0.1",
     "react-dom": "^18.3.1",
+    "react-loader-spinner": "^6.1.6",
+    "react-notifications": "^1.7.4",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
+    "react-select": "^5.8.3",
+    "react-spinners": "^0.14.1",
+    "react-switch": "^7.0.0",
+    "react-world-flags": "^1.6.0",
+    "shortid": "^2.2.16",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^4.9.5"
   }
 }

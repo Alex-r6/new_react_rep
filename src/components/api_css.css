@@ -1,0 +1,479 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_div {
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.home_div {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.culc_header_p {
+    margin: 0;
+}
+
+.modal {
+    width: 200px;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+}
+
+.data_cont {
+    height: calc(100vh - 53px);
+    background-color: aquamarine;
+    overflow-y: auto;
+}
+
+.lst_cont {
+    display: flex;
+    padding: 50px 0;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.p_red {
+    color: red;
+}
+
+.p_green {
+    color: green;
+}
+
+.p_yellow {
+    color: yellow;
+}
+
+.p_blue {
+    color: blue;
+}
+
+.p_default {
+    color: black;
+}
+
+.modal_btn {
+    width: 50px;
+    height: 30px;
+    background-color: red;
+}
+
+.comments_p {
+    border: 1px solid black;
+}
+
+.btn_cont {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.modalComment {
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+}
+
+.header_modal {
+    width: auto;
+    height: auto;
+    background-color: green;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+}
+
+.user_in {
+    display: flex;
+    flex-direction: column;
+}
+
+.p_modal_header {
+    margin: 0px;
+}
+
+.test_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.joke_btn {
+    position: fixed;
+    /* z-index: 100; */
+    top: 75px;
+    right: 5px;
+}
+
+.joke_btn2 {
+    position: fixed;
+    top: 35px;
+    right: 55px;
+}
+
+.joke_cont {
+    border: 1px red solid;
+}
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+}
+
+.joke_cont {
+    background-color: green;
+    position: relative;
+}
+
+.joke_x {
+    display: none;
+    background-color: red;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.joke_cont:hover .joke_x {
+    display: flex;
+}
+
+.modal_jokes {
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+}
+
+.num {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.active_example {
+    color: blue;
+}
+
+.toll_spinner {
+    position: fixed;
+    top: 37%;
+    left: 50%;
+}
+
+
+
+
+.lst_cont_p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color:  ; */
+    padding: 0 8px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.p_text {
+    width: 100%;
+    /* Ширина контейнера */
+    overflow: hidden;
+    /* Скрытие текста, выходящего за границы */
+    white-space: nowrap;
+    /* Запрет переноса текста */
+    text-overflow: ellipsis;
+    /* Добавление "..." в конце обрезанного текста */
+}
+
+.btn-c-f {
+    left: calc(100vw - 50px);
+}
+
+@media screen and (max-width : 600px) {
+    .task-c {
+        background-color: green;
+        height: calc(100vh - 105px);
+        overflow-y: auto;
+    }
+
+    /* .lst_cont_p {
+        /* position: relative;
+        width: calc(100% - 50px); */
+    } */
+
+    .p_text {
+        white-space: normal;
+        overflow: auto;
+        text-overflow: clip;
+        font-size: 12px;
+    }
+
+    .btn-c-f {
+        left: calc(100vw - 65px);
+    }
+
+
+.buttons-c {
+    width: 200px;
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lst_cont_p p {
+    margin: 0;
+}
+
+.lst_cont_p:hover .btn-p {
+    opacity: 1;
+}
+
+.btn-p {
+    transition: all .3s;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.btn-c {
+    position: absolute;
+    width: 50px;
+    transition: all 3s;
+}
+
+.btn-c-y {
+    left: 0;
+}
+
+
+
+.inp_line {
+    height: 16.56px;
+}
+
+.color_modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 10%;
+    width: 160px;
+    height: 140px;
+    background-color: purple;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+}
+
+.move {
+    right: 20px;
+}
+
+.stop {
+    right: -300px;
+}
+.color_modal_btn {
+    width: 60px;
+}
+
+.color_modal_x{
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: red;
+}
+
+.curr_cont {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.history_cont {
+    width: 400px;
+    height: 60%;
+    background-color: green;
+    position:fixed;
+    top:20%;
+    left:30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    
+}
+
+.history_div {
+    border: 1px solid black;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.history_div_p {
+    margin: 0;
+}
+
+.history_btn {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.main_culc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.culc {
+    width: 450px;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+.culc_header {
+    height: 30px;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+}
+
+.culc_toDo {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: fuchsia;
+    padding: 10px 0;
+}
+
+.cont_flag {
+    display: flex;
+    min-width: 180px;
+}
+
+.main_cont {
+    display: flex;
+    padding: 5px 0;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.vollet {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100vh;
+    /* background-color:blue; */
+    transition: all 2s;
+}
+
+.vollet_img_cont {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.vollet_img {
+    transition: all 2s;
+    
+}
+
+.vollet_img.open {
+    transform: rotateY(0);
+}
+.vollet_img.close {
+    transform: rotateY(180deg);
+
+}
+
+.move {
+    width: 340px;
+}
+
+.vollet_cont {
+    width: 300px;
+    height: 100vh;
+    background-color: chartreuse;
+}
+
+.btn_change {
+    background-color: red;
+}
+
+
+.modal-c {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.525);
+    display: flex;
+    justify-content: center;
+    
+
+}
+.e_modal {
+    position: fixed;
+    width: 250px;
+    height: 150px;
+    background-color: violet;
+    top: -50%; 
+    left: -50%;
+    transition: all 3s;
+}
+
+.run {
+    top:40%;
+    left: 36%
+}
+
+.e_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
